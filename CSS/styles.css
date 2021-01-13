@@ -1,11 +1,34 @@
-* {
+html {
+  box-sizing: border-box;
+}
+
+*,
+* ::before,
+* ::after {
   text-decoration: none;
   list-style: none;
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1230px;
+}
+
+:root {
+  --title-font: 'Roboto', sans-serif;
+  --text-font: 'Roboto', sans-serif;
 }
 
 body {
-  font: ;
+  font-family: var(--text-font);
+  color: #212121;
 }
+
+/* ===================== COMPONENTS ===================== */
+
+/* ===================== END COMPONENTS ===================== */
+
+/* ===================== HEADER ===================== */
 
 .header-container {
   background: #ffffff;
@@ -33,12 +56,12 @@ body {
   line-height: 1, 143;
   letter-spacing: 0.02em;
   text-align: left;
-  color: rgb(33, 150, 243);
+  color: black;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: black;
+  color: rgb(33, 150, 243);
 }
 
 .contacts .link {
@@ -48,12 +71,16 @@ body {
   font-size: 14px;
   line-height: 1, 143;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: #000000;
 }
 
 .contacts .link:hover {
-  color: black;
+  color: #2196f3;
 }
+
+/* ===================== END HEADER ===================== */
+
+/* ===================== HERO ===================== */
 
 .hero-container {
   background: #2f303a;
@@ -76,7 +103,12 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-family: Roboto;
 }
+
+/* ===================== END HERO ===================== */
+
+/* =====================  ADVANTAGES ===================== */
 
 .advantages-item {
   font-family: Roboto;
@@ -97,10 +129,12 @@ body {
   font-size: 14px;
   line-height: 1, 714;
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
+/* ===================== END ADVANTAGES ===================== */
+
+/* ===================== WHAT WE ARE DOING ===================== */
 .what-are-we-doing-title {
   font-family: Roboto;
   font-style: normal;
@@ -112,6 +146,10 @@ body {
 
   color: #212121;
 }
+
+/* ===================== END WHAT WE ARE DOING ===================== */
+
+/* ===================== OUR TEAM ===================== */
 
 .our-team-title {
   font-family: Roboto;
@@ -151,9 +189,14 @@ body {
   color: #757575;
 }
 
+/* ===================== END OUR TEAM ===================== */
+
+/* ===================== FOOTER ===================== */
+
 .footer-container {
   background: #2f303a;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .logo-footer-accent {
@@ -165,9 +208,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1, 714;
-
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
@@ -181,6 +222,10 @@ body {
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+/* =====================END FOOTER ===================== */
+
+/* ===================== PORTFOLIO ===================== */
 
 .portfolio-item {
   font-family: Roboto;
@@ -208,4 +253,5 @@ body {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-family: Roboto;
 }
